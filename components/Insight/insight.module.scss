@@ -1,0 +1,23 @@
+
+.insight {
+  display: flex;
+  justify-content: center;
+
+  margin: 12rem auto 0 auto;
+  width: 600px;
+}
+
+.insightArrow {
+  padding: 0 4rem;
+}
+
+.insightText {
+  h3 {
+    font-size: 36px;
+    font-weight: 300;
+  }
+  
+  span {
+    font-weight: bold;
+  }
+}

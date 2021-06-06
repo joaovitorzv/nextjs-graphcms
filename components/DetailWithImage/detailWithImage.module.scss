@@ -1,0 +1,23 @@
+.detailsWithPicture {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailsContainer {
+  width: 500px;
+  padding-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailsText {
+  h2 {
+    font-size: 42px;
+    margin-bottom: 1.5rem;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+}

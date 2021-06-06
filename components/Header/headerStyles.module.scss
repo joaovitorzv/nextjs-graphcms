@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  border-bottom: var(--default-border);
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 2rem 4rem;
+  border-right: var(--default-border);
+}
+
+.menu {
+  margin-left: 8rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0 2rem;
+      
+      &:not(:first-child) {
+        border-left: var(--default-border);
+      }
+    }
+  }
+}

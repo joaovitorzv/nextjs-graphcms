@@ -1,0 +1,54 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  main {
+    width: 1200px;
+  }
+}
+
+.firstContact {
+  position: relative;
+  margin-top: 5rem;
+
+  button {
+    margin-top: 5rem;
+  }
+}
+
+.firstContactText {
+  h2 {
+    font-size: 68px;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    font-size: 18px;
+    color: var(--gray);
+  }
+}
+
+.highlight {
+  color: var(--highlight);
+}
+
+.arrows {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.row {
+  display: flex;
+}
+
+.sectionMargin {
+  margin-top: 10rem;
+}
