@@ -1,12 +1,18 @@
 .container {
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
 
   main {
     width: 1200px;
+  }
+
+  @media only screen and (max-width: 1250px) {
+    main {
+      width: 90%;
+    }
   }
 }
 
@@ -29,6 +35,17 @@
     font-size: 18px;
     color: var(--gray);
   }
+
+  @media only screen and (max-width: 800px) {
+    h2 {
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+  
 }
 
 .highlight {
@@ -43,6 +60,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
 }
 
 .row {

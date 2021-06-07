@@ -1,5 +1,19 @@
 .squareContainer {
   display: flex;
+  height: fit-content;
+
+  width: 100%;
+  max-width: 540px;
+  max-height: 300px;
+  height: auto;
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 480px;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    max-height: 250px;
+  }
 }
 
 .squareBorder {
@@ -8,11 +22,15 @@
 
   border-top: var(--default-border);
   border-bottom: var(--default-border);
+
+  @media only screen and (max-width: 1200px) {
+    width: 30px;
+  }
 }
 
 .image {
   position: relative;
-  width: 540px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
   border: var(--default-border)
 }

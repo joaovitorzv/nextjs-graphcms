@@ -1,7 +1,13 @@
 .detailsWithPicture {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+
+  @media only screen and (max-width: 800px) {
+    border: 1px solid pink;
+  }
 }
+
 
 .detailsContainer {
   width: 500px;
@@ -9,6 +15,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: 1200px) {
+    padding-left: 2rem;
+    padding-right: 0;
+  }
 }
 
 .detailsText {
@@ -19,5 +30,33 @@
   
   p {
     font-size: 18px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size-adjust: 16px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    
+    h2 {
+      font-size: 26px;
+    }
+    p {
+      font-size: 14px;
+    }
+  } 
+}
+
+.detailsBtn {
+  margin-top: 1rem;
+
+  @media only screen and (max-width: 1200px) {
+    padding: .5rem 1rem;
   }
 }

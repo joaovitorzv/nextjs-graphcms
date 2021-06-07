@@ -63,7 +63,7 @@ export default function Home() {
           />
           <DetailWithImage
             direction='row'
-            title='Constant evolultion, constant adaptation'
+            title='Constant evolution, constant adaptation'
             description='We know what it takes to help your business prepare for the next generation of digital transformations. At KnackForge, we provide a comprehensive suite of solutions and services that technologically superior and comercially viable.'
             imgName='products-people.jpg'
             imgAlt='Woman writing tasks on postits with a men'

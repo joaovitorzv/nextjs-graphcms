@@ -12,7 +12,7 @@ type Props = {
 
 export default function DetailWithImage(props: Props & SquareImgProps) {
   return (
-    <div className={styles.detailsWithPicture} style={{ flexDirection: props.direction === 'row' ? 'row' : 'row-reverse' }}>
+    <div className={styles.detailsWithPicture + props.direction === 'reverse' ? styles.reverseContainer : ''} >
       <SquareImg
         direction={props.direction}
         imgName={props.imgName}
@@ -23,9 +23,9 @@ export default function DetailWithImage(props: Props & SquareImgProps) {
           <h2>{props.title}</h2>
           <p>{props.description}</p>
         </div>
-        <button className='btn'>
+        <button className={`btn ${styles.detailsBtn}`}>
           Details
-        <ArrowRight size={30} />
+          <ArrowRight size={30} />
         </button>
       </div>
     </div>

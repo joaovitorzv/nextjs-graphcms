@@ -14,13 +14,13 @@ export default function SquareImg({ imgAlt, imgName, direction }: SquareImgProps
         <div className={styles.squareBorder}></div>
       )}
       <div className={styles.image}>
-        <Image
+        {/* <Image
           alt={imgAlt}
           src={`/images/${imgName}`}
           layout='fill'
           objectFit='cover'
           quality={100}
-        />
+        /> */}
       </div>
       {direction === 'reverse' && (
         <div className={styles.squareBorder}></div>
